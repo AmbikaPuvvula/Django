@@ -1,0 +1,18 @@
+{% extends 'userApp/header.html' %}
+{% block title %}SignIn Form{% endblock title %}
+{% block content %}
+<div class="d-flex justify-content-sm-center">
+	<form method="POST" action="">
+		<div class="card">
+			<div class="card-header bg-info">Signin Form</div>
+			<div class="card-body">
+				{% csrf_token %}
+				{{form.as_p}}
+			</div>
+			<div class="card-footer">
+				<input  class = "btn btn-primary" type="submit" name="submit" value="SignIn">
+			</div>
+		</div>
+	</form>
+</div>
+{% endblock content %}

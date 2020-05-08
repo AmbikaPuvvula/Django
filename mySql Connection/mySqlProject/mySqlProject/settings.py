@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'userAccount',
+    'userApp',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'ambika_p@apssdc.in'
 EMAIL_HOST_PASSWORD = '***********'
+
+LOGIN_REDIRECT_URL = 'home'

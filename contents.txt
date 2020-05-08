@@ -149,11 +149,11 @@ Models
 			command will generate a interface file for converting class to db table.
 		python manage.py migrate
 			command will generate tables by using interface.
-------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 27 April 2020
-------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 for storing we will write sql queries like create,select,insert etc..
-Instead of writing queries will use ORM 
+Instead of writing queries will use ORM
 ORM(Object Relational Mapping) -- by using objects we can access,store data in database.
 	How to insert data
 	How to access data
@@ -189,15 +189,15 @@ Procedure for retrieving data
 				data = tablename.objects.get(pk=2)
 			filter() -- returns multiple records.
 				data =  tablename.objects.filter(first_name='Ambika')
------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 29 April 2020
------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 Include function
 	navigate request from main urls.py(belongs to main project) to apps urls.py(belongs to app)
 		first we have to create urls.py in app
 		for navigating request here i will use include() function,for this include pass 'newapp.urls'
-------------------------------------------------------------------------------------------------------------30 April 2020
-------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------30 April 2020
+----------------------------------------------------------------------------------------------------
 fetching data from database
 Using bootstrap 
 form validations
@@ -207,7 +207,7 @@ form validations
 		call specific function is_valid()
 Update
 Delete
-------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 Assignment -- User Account Creation
 create new app with your own name
 	create model -- model fields -- First Name,last Name,User Name,Password,Mail Id,Phone Number,age
@@ -218,16 +218,16 @@ create new app with your own name
 	
 	create login form
 		if username and password is valid show his details in table format
-------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 01 May 2020
------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 delete -- To remove partivular preson based on id
 	check that person is existed or not by using classname.objects.get(id=id)
 	if that id is existed 
 		take confirmation from user are sure to delete
 			if confirmation is true then only you have to run delete operation obj.delete()
-------------------------------------------------------------------------------------------------------------02 May 2020
-------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------02 May 2020
+----------------------------------------------------------------------------------------------------
 My Sql connections
 	for making mysql connection we have to install mysql drivers
 	pip install mysqlclient
@@ -242,10 +242,41 @@ In main urls.py
 	if settings.DEBUG:
 		urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
-------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 05 May 2020
-------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 Image Uploading
 Mail sending
+----------------------------------------------------------------------------------------------------06 May 2020
+----------------------------------------------------------------------------------------------------
+User Registration and user authentication
+Uer Authentication
+	Using Functions
+	Using Classes
+Task:
+	display profile info of current user
+----------------------------------------------------------------------------------------------------
+07 May 2020
+----------------------------------------------------------------------------------------------------
+create class(details) fields(age,phnnum,image,userId=foreignkey) in models.py 
+	after sign in update profile then show firstname last name with the updated fields  
+----------------------------------------------------------------------------------------------------
+08 May 2020
+----------------------------------------------------------------------------------------------------
+db relationships
+	one to one
+	one to many
+	many to one
+	many to mant
+Normalizations
+	break large table with small tables
+		try to remove duplicates
+		have to consider one table as primary table
+			key primary key in main table
+	1st nf
+	2nd nf
+	3rd nf
+	bcnf
+	foreign key in secondary table
 
 	

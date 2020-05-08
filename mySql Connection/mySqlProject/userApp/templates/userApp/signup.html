@@ -1,0 +1,41 @@
+{% extends 'userApp/header.html' %}
+{% block title %}SignUp Form{% endblock title %}
+{% block content %}
+<div class="d-flex justify-content-sm-center">
+	<form method="POST">
+		<div class="card">
+			<div class="card-header bg-info">Signup Form</div>
+			<div class="card-body">
+				{% csrf_token %}
+				<div class="form-group">
+					<label for="firstname">{{form.first_name.label}}</label>
+					{{form.first_name}}
+				</div>
+				<div class="form-group">
+					<label for="lastname">{{form.last_name.label}}</label>
+					{{form.last_name}}
+				</div>
+				<div class="form-group">
+					<label for="username">{{form.username.label}}</label>
+					{{form.username}}
+				</div>
+				<div class="form-group">
+					<label for="password">{{form.password1.label}}</label>
+					{{form.password1}}
+				</div>
+				<div class="form-group">
+					<label for="password">{{form.password2.label}}</label>
+					{{form.password2}}
+				</div>
+				<div class="form-group">
+					<label for="email">{{form.email.label}}</label>
+					{{form.email}}
+				</div>
+			</div>
+			<div class="card-footer">
+				<button class = "btn btn-info" type="submit" name="submit" value="Signup">Signup</button>
+			</div>
+		</div>
+	</form>
+</div>
+{% endblock content %}

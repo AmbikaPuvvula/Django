@@ -1,0 +1,10 @@
+{% extends 'userApp/header.html' %}
+{% block title %}SignOut Form{% endblock title %}
+{% block content %}
+<div class="justify-content-sm-center">
+	<div class="alert alert-info">
+		<h2>You have been logged out</h2>
+		<a href="{% url 'login' %}">click here to Login</a>
+	</div>
+</div>
+{% endblock content %}
