@@ -278,5 +278,9 @@ Normalizations
 	3rd nf
 	bcnf
 	foreign key in secondary table
-
-	
+Navigating request to login form:
+	if user not existed it will try to redirect request to login.html page
+	for that we have to import login_required
+		from django.contrib.auth.decorators import login_required
+	In settings.py we have to mention a statement
+		LOGIN_URL = 'login'

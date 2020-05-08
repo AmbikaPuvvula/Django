@@ -14,6 +14,9 @@
       </li>
       {% else %}
       <li class="nav-item">
+        <a class="nav-link" href="{% url 'profile' user.id %}">Profile</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#">Hii, Welcome {{request.user}}</a>
       </li>
       <li class="nav-item">

@@ -138,3 +138,5 @@ EMAIL_HOST_USER = 'ambika_p@apssdc.in'
 EMAIL_HOST_PASSWORD = '***********'
 
 LOGIN_REDIRECT_URL = 'home'
+
+LOGIN_URL = 'login'
